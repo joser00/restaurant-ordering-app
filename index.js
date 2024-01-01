@@ -81,7 +81,7 @@ function renderOrder() {
 
 }
 //Make the payment
-function payment(){
+function makePayment(){
   let btnOrder = document.getElementById('complete-order')
   let formModal = document.getElementById('form-modal') 
   
@@ -97,6 +97,6 @@ function payment(){
   document.getElementById('footer-container').innerHTML = `<p id="thanks-element">Thanks, ${costumerName}! Your order is on its way!</p>`
  })
 }
-payment()
+makePayment()
 renderOrder();
 renderMenu();
