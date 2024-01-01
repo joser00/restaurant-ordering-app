@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;900&family=Martian+Mono:wght@100;400;700&family=Nova+Mono&family=Roboto+Serif:wght@400;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="assets/header.png" alt="Jimmy's Diner" />
+      </div>
+    </header>
+    <main>
+      <div class="container" id="menu"></div>
+    </main>
+    <div class="modal" id="modal">
+        <form id="form-modal">
+            <h1>Enter cad details</h1>
+            <div class="container-input">
+            <input type="text" name="costumerName" class="input-data" placeholder="Enter your name" required>
+            <input type="text" class="input-data" placeholder="Enter card number" required>
+            <input type="text" class="input-data" placeholder="Enter CVV" required>
+            </div>
+            <button class="btn-order" id="pay-btn">Pay</button>
+        </form>
+    </div>
+    <footer id="footer">
+      <div class="container" id="footer-container">  
+        <h1 id="title-order">Your Order</h1>
+        <div id="order"></div>
+        <hr />
+        <div class="pricing">
+          <h1 id="total-price">Total price:</h1>
+          <p id="total-price-sum"></p>
+        </div>
+        <button class="btn-order" id="complete-order">Complete order</button>
+      </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
